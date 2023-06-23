@@ -21,16 +21,16 @@ public UserManagementController(UserManagementService userManagementService){
     public String addUser(@RequestBody UserManagementModel user){
 return userManagementService.addUser(user);
 }
-//@GetMapping("/finduser/number/{number}")
-//    public UserManagementModel getuser(@PathVariable int number){
-//    return userManagementService.getUser(number);
-//}
+@GetMapping("/finduser/number/{number}")
+    public UserManagementModel getuser(@PathVariable int number){
+    return userManagementService.getUser(number);
+}
 
-    @GetMapping("/finduser")
-    public UserManagementModel getuser(@RequestBody Map jsonMap){
-    int number=jsonMap.get("number").toString()==null?null:Integer.parseInt(jsonMap.get("number").toString());
-        return userManagementService.getUser(number);
-    }
+//    @GetMapping("/finduser")
+//    public UserManagementModel getuser(@RequestBody Map jsonMap){
+//    int number=jsonMap.get("number").toString()==null?null:Integer.parseInt(jsonMap.get("number").toString());
+//        return userManagementService.getUser(number);
+//    }
 
 @GetMapping("/findalluser")
     public List<UserManagementModel> getAllUser(){
