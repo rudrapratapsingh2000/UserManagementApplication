@@ -19,12 +19,7 @@ Created a simple application using Spring Initializer With required depencdencie
         getAllUser
         updateUser
         deleteUser  
-* ### Repository
-        addUser 
-        finduser
-        getAllUser
-        updateUser
-        deleteUser    
+    
 ## Data Structure
 * String
 * int 
