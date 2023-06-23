@@ -29,4 +29,7 @@ Created a simple application using Spring Initializer With required depencdencie
 * String
 * int 
 
+## Author
+
+- [@Rudra Pratap Singh](https://github.com/rudrapratapsingh2000)
 
